@@ -17,6 +17,7 @@
 		48EA5DD91C8A4F1700A5A85C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EA5DD81C8A4F1700A5A85C /* APIManager.swift */; };
 		48EA5DDC1C8A841E00A5A85C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EA5DDB1C8A841E00A5A85C /* Constants.swift */; };
 		48EA5DDE1C8A862700A5A85C /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EA5DDD1C8A862700A5A85C /* MusicVideo.swift */; };
+		48EA5DE31C8BA96C00A5A85C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EA5DE21C8BA96C00A5A85C /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,9 @@
 		48EA5DD81C8A4F1700A5A85C /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		48EA5DDB1C8A841E00A5A85C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		48EA5DDD1C8A862700A5A85C /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
+		48EA5DE01C8BA96C00A5A85C /* MusicVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicVideo-Bridging-Header.h"; sourceTree = "<group>"; };
+		48EA5DE11C8BA96C00A5A85C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		48EA5DE21C8BA96C00A5A85C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		48EA5DA51C8A447800A5A85C /* MusicVideo */ = {
 			isa = PBXGroup;
 			children = (
+				48EA5DDF1C8BA89800A5A85C /* Obj-c */,
 				48EA5DDA1C8A83F800A5A85C /* Utils */,
 				48EA5DD71C8A4A7800A5A85C /* Supporting Files */,
 				48EA5DD41C8A4A2B00A5A85C /* Model */,
@@ -172,6 +177,16 @@
 				48EA5DDB1C8A841E00A5A85C /* Constants.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		48EA5DDF1C8BA89800A5A85C /* Obj-c */ = {
+			isa = PBXGroup;
+			children = (
+				48EA5DE11C8BA96C00A5A85C /* Reachability.h */,
+				48EA5DE21C8BA96C00A5A85C /* Reachability.m */,
+				48EA5DE01C8BA96C00A5A85C /* MusicVideo-Bridging-Header.h */,
+			);
+			name = "Obj-c";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +327,7 @@
 				48EA5DA91C8A447800A5A85C /* ViewController.swift in Sources */,
 				48EA5DDE1C8A862700A5A85C /* MusicVideo.swift in Sources */,
 				48EA5DA71C8A447800A5A85C /* AppDelegate.swift in Sources */,
+				48EA5DE31C8BA96C00A5A85C /* Reachability.m in Sources */,
 				48EA5DDC1C8A841E00A5A85C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,10 +472,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanky.MusicVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicVideo/MusicVideo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -467,10 +486,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanky.MusicVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicVideo/MusicVideo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -539,6 +560,7 @@
 				48EA5DCD1C8A447800A5A85C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48EA5DCE1C8A447800A5A85C /* Build configuration list for PBXNativeTarget "MusicVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +569,7 @@
 				48EA5DD01C8A447800A5A85C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48EA5DD11C8A447800A5A85C /* Build configuration list for PBXNativeTarget "MusicVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +578,7 @@
 				48EA5DD31C8A447800A5A85C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
