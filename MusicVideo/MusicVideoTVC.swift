@@ -126,15 +126,15 @@ class MusicVideoTVC: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return videos.count
     }
-
+    
+    private struct storyboard {
+        static let cellReuseIdentifier = "cell"
+    }
   
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(storyboard.cellReuseIdentifier, forIndexPath: indexPath) as! MusicVideoTableViewCell
 
-        let video = videos[indexPath.row]
-        
-        cell.textLabel?.text = ("\(indexPath.row + 1)")
-        cell.detailTextLabel?.text = video.vName
+        cell.video = videos[indexPath.row]
 
 
         return cell
