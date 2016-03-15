@@ -32,8 +32,8 @@ class MusicVideoTableViewCell: UITableViewCell {
             
         } else {
            GetVideoImage(video!, imageView: musicImage)
-        }  
-        
+            print("Get imagesin background thread")
+        }
     }
     
     func GetVideoImage(video: Videos, imageView: UIImageView ) {
@@ -53,8 +53,5 @@ class MusicVideoTableViewCell: UITableViewCell {
         }
         
     }
-    
-    
-    
     
 }
