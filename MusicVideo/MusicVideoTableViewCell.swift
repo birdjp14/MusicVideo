@@ -21,9 +21,9 @@ class MusicVideoTableViewCell: UITableViewCell {
     @IBOutlet weak var musicTitle: UILabel!
     
     func updateCell() {
-        musicTitle.text = video!.vName
+        musicTitle.text = video?.vName
         rank.text = ("\(video!.vRank)")
-        musicImage.image = UIImage(named: "imageNotAvailabe")
+        musicImage.image = UIImage(named: "imageNotAvailable")
         
     }
 }

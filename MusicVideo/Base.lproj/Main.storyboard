@@ -29,18 +29,18 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="32" translatesAutoresizingMaskIntoConstraints="NO" id="8Qa-qF-ayj">
-                                            <rect key="frame" x="179" y="27" width="32" height="20"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="17y-15-VHW">
                                             <rect key="frame" x="15" y="12" width="156" height="115"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="156" id="0f1-RY-1RH"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="32" translatesAutoresizingMaskIntoConstraints="NO" id="8Qa-qF-ayj">
+                                            <rect key="frame" x="179" y="17" width="32" height="20"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
@@ -50,7 +50,7 @@
                                         <constraint firstItem="17y-15-VHW" firstAttribute="leading" secondItem="fkv-7z-IE2" secondAttribute="leadingMargin" constant="7" id="GUG-r0-bUK"/>
                                         <constraint firstItem="bEk-Po-qxk" firstAttribute="top" secondItem="fkv-7z-IE2" secondAttribute="topMargin" constant="37" id="TjV-mM-DDs"/>
                                         <constraint firstItem="17y-15-VHW" firstAttribute="centerY" secondItem="fkv-7z-IE2" secondAttribute="centerY" id="dyB-7N-fXL"/>
-                                        <constraint firstItem="8Qa-qF-ayj" firstAttribute="top" secondItem="fkv-7z-IE2" secondAttribute="topMargin" constant="19" id="dz8-Bq-vcj"/>
+                                        <constraint firstItem="8Qa-qF-ayj" firstAttribute="top" secondItem="fkv-7z-IE2" secondAttribute="topMargin" constant="9" id="dz8-Bq-vcj"/>
                                         <constraint firstItem="8Qa-qF-ayj" firstAttribute="leading" secondItem="17y-15-VHW" secondAttribute="trailing" constant="8" symbolic="YES" id="hnF-qn-WN8"/>
                                         <constraint firstItem="17y-15-VHW" firstAttribute="top" secondItem="fkv-7z-IE2" secondAttribute="topMargin" constant="4" id="tW2-ul-Wec"/>
                                     </constraints>
