@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4847C9191CA37C07001C31F3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4847C9181CA37C07001C31F3 /* Default-568h@2x.png */; };
 		48E435B21C8E9AB200A7C75F /* MusicVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E435B11C8E9AB200A7C75F /* MusicVideoTableViewCell.swift */; };
 		48EA5DA71C8A447800A5A85C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EA5DA61C8A447800A5A85C /* AppDelegate.swift */; };
 		48EA5DA91C8A447800A5A85C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EA5DA81C8A447800A5A85C /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4847C9181CA37C07001C31F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		48E435B11C8E9AB200A7C75F /* MusicVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTableViewCell.swift; sourceTree = "<group>"; };
 		48EA5DA31C8A447800A5A85C /* MusicVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48EA5DA61C8A447800A5A85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		48EA5D9A1C8A447800A5A85C = {
 			isa = PBXGroup;
 			children = (
+				4847C9181CA37C07001C31F3 /* Default-568h@2x.png */,
 				48EA5DA51C8A447800A5A85C /* MusicVideo */,
 				48EA5DBA1C8A447800A5A85C /* MusicVideoTests */,
 				48EA5DC51C8A447800A5A85C /* MusicVideoUITests */,
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48EA5DB11C8A447800A5A85C /* LaunchScreen.storyboard in Resources */,
+				4847C9191CA37C07001C31F3 /* Default-568h@2x.png in Resources */,
 				48EA5DAE1C8A447800A5A85C /* Assets.xcassets in Resources */,
 				48EA5DAC1C8A447800A5A85C /* Main.storyboard in Resources */,
 			);

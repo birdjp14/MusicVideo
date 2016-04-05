@@ -21,7 +21,15 @@ class MusicVideoTVC: UITableViewController {
         
         //        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachabilityStatusChanged", name: "ReachStatusChanged", object: nil)
         
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MusicVideoTVC.preferredFontChange), name: UIContentSizeCategoryDidChangeNotification, object: nil)
+        
         reachabilityStatusChanged()
+    }
+    
+    
+    func preferredFontChange() {
+        print("The preferred font has change")
     }
     
     func didLoadData(videos:[Videos]) {
@@ -113,7 +121,13 @@ class MusicVideoTVC: UITableViewController {
     //Is called just as the object is about to be deallocated
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self, name: "ReachStatusChanged", object: nil)
+        
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIContentSizeCategoryDidChangeNotification, object: nil)
     }
+    
+    
+    
+    
 
     // MARK: - Table view data source
 

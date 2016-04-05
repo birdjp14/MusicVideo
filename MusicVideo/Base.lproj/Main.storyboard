@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10115" systemVersion="15E61b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d3p-vp-po2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d3p-vp-po2">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -36,8 +36,11 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="32" translatesAutoresizingMaskIntoConstraints="NO" id="8Qa-qF-ayj">
-                                            <rect key="frame" x="179" y="17" width="32" height="20"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <rect key="frame" x="179" y="17" width="47" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="47" id="HsV-he-9A4"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -45,13 +48,14 @@
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="bEk-Po-qxk" secondAttribute="bottom" constant="16" id="1FG-n0-omK"/>
-                                        <constraint firstItem="bEk-Po-qxk" firstAttribute="leading" secondItem="8Qa-qF-ayj" secondAttribute="leading" id="Ah3-VA-FfZ"/>
+                                        <constraint firstItem="8Qa-qF-ayj" firstAttribute="leading" secondItem="17y-15-VHW" secondAttribute="trailing" constant="8" symbolic="YES" id="AKC-i9-smY"/>
                                         <constraint firstItem="bEk-Po-qxk" firstAttribute="trailing" secondItem="fkv-7z-IE2" secondAttribute="trailingMargin" id="FNT-hg-DUN"/>
                                         <constraint firstItem="17y-15-VHW" firstAttribute="leading" secondItem="fkv-7z-IE2" secondAttribute="leadingMargin" constant="7" id="GUG-r0-bUK"/>
                                         <constraint firstItem="bEk-Po-qxk" firstAttribute="top" secondItem="fkv-7z-IE2" secondAttribute="topMargin" constant="37" id="TjV-mM-DDs"/>
+                                        <constraint firstItem="8Qa-qF-ayj" firstAttribute="leading" secondItem="bEk-Po-qxk" secondAttribute="leading" id="VZS-Ru-I2K"/>
+                                        <constraint firstItem="8Qa-qF-ayj" firstAttribute="top" secondItem="fkv-7z-IE2" secondAttribute="topMargin" constant="9" id="XFo-OD-Oyx"/>
                                         <constraint firstItem="17y-15-VHW" firstAttribute="centerY" secondItem="fkv-7z-IE2" secondAttribute="centerY" id="dyB-7N-fXL"/>
-                                        <constraint firstItem="8Qa-qF-ayj" firstAttribute="top" secondItem="fkv-7z-IE2" secondAttribute="topMargin" constant="9" id="dz8-Bq-vcj"/>
-                                        <constraint firstItem="8Qa-qF-ayj" firstAttribute="leading" secondItem="17y-15-VHW" secondAttribute="trailing" constant="8" symbolic="YES" id="hnF-qn-WN8"/>
+                                        <constraint firstItem="bEk-Po-qxk" firstAttribute="top" secondItem="8Qa-qF-ayj" secondAttribute="bottom" constant="1" id="qbB-71-NOw"/>
                                         <constraint firstItem="17y-15-VHW" firstAttribute="top" secondItem="fkv-7z-IE2" secondAttribute="topMargin" constant="4" id="tW2-ul-Wec"/>
                                     </constraints>
                                 </tableViewCellContentView>
